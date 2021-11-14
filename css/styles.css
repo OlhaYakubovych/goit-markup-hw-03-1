@@ -69,6 +69,11 @@ body {
   margin: -1px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* -----------------------Шапка сайта--------------------- */
 
 .header {
@@ -190,10 +195,9 @@ body {
 
 /* -----------------------Особенности--------------------- */
 
-.features-container {
-  padding-top: 94px;
+.features {
+  padding-bottom: 0px;
 }
-
 .features-list {
   display: flex;
 }
@@ -217,11 +221,6 @@ body {
 }
 
 /* -----------------------Род занятий--------------------- */
-
-.about-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .about-title {
   margin-bottom: 50px;
@@ -250,11 +249,6 @@ body {
   background: var(--third-background-color);
 }
 
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .team-list {
   display: flex;
 }
@@ -267,6 +261,12 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--second-title-color);
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item + .team-item {
@@ -350,11 +350,6 @@ body {
 
 /* -------------------Наши проэкты------------------------ */
 
-.main-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .btn-list {
   display: flex;
   justify-content: center;
@@ -405,12 +400,13 @@ body {
   margin-bottom: 0;
 }
 
-.pic-container {
+/*.pic-container {
   padding-top: 20px;
   padding-bottom: 20px;
-}
+}*/
 
 .pic-title {
+  margin-top: 20px;
   margin-bottom: 4px;
 
   font-weight: bold;
@@ -421,6 +417,8 @@ body {
 }
 
 .pic-text {
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-text-color);
